@@ -78,8 +78,7 @@
 # ./arch/install/base.sh
 ```
 
-`# vim /etc/mkinitcpio.conf`
-  `add **btrfs** **nvidia** into **MODULES**`
+`# vim /etc/mkinitcpio.conf` >> `add **btrfs** **nvidia** into **MODULES**`
   
 `# mkinitcpio -p linux`
 
