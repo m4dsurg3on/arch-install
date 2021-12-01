@@ -50,7 +50,7 @@
 # cd
 # umount /mnt
 # mount -o noatime,compress=zstd,space_cache=v2,subvol=@ /dev/sda2 /mnt
-# mkdir /mnt/{boot,home,.snapshots,var/log}
+# mkdir -p /mnt/{boot,home,.snapshots,var/log}
 # mount -o noatime,compress=zstd,space_cache=v2,subvol=@home /dev/sda2 /mnt/home
 # mount -o noatime,compress=zstd,space_cache=v2,subvol=@snapshots /dev/sda2 /mnt/.snapshots
 # mount -o noatime,compress=zstd,space_cache=v2,subvol=@var_log /dev/sda2 /mnt/var/log
