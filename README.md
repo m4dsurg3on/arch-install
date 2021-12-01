@@ -79,7 +79,7 @@
 ```
 
 `# vim /etc/mkinitcpio.conf`
-  add **btrfs** into **MODULES**
+  `add **btrfs** **nvidia** into **MODULES**`
   
 `# mkinitcpio -p linux`
 
