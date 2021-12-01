@@ -116,7 +116,11 @@ $ sudo systemctl enable --now snapper-cleanup.timer
 ```
 
 ```
-$ yay -S snap-pack-grub snapper-gui
+$ git clone https://aur.archlinux.org/yay.git
+$ cd yay/
+$ makepkg -si PKGBUILD
+$ cd
+$ yay -S snap-pack-grub snapper-gui ttf-ms-fonts
 $ sudo mkdir /etc/pacman.d/hooks
 $ sudo vim /etc/pacman.d/hooks/50-bootbackup.hook
     [Trigger]
