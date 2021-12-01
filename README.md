@@ -79,8 +79,7 @@
 ```
 
 `# vim /etc/mkinitcpio.conf`
-  add **btrfs** **nvidia** into **MODULES**
-  remove **fsck** from **HOOKS**
+  add **btrfs** into **MODULES**
   
 `# mkinitcpio -p linux`
 
