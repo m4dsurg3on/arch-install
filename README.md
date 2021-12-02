@@ -71,7 +71,7 @@
 `# arch-chroot /mnt`
 
 ```
-# git clone https://gitlab.com/m4dsurg3on/arch-install
+# git clone https://github.com/m4dsurg3on/arch-install
 # cd /arch-install
 # chmod +x base.sh
 # cd /
