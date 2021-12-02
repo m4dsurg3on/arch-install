@@ -9,7 +9,8 @@ sudo hwclock --systohc
 sudo reflector -c Czechia -a 6 --sort rate --save /etc/pacman.d/mirrorlist
 sudo pacman -Syy
 
-sudo pacman -S --noconfirm xorg sddm plasma kde-applications firefox libreoffice vlc materia-kde papirus-icon-theme
+sudo pacman -S --noconfirm kvantummanager
+sudo pacman -S --noconfirm xorg sddm plasma kde-applications firefox libreoffice vlc materia-kde materia-gtk-theme kvantum-theme-materia papirus-icon-theme
 
 sudo systemctl enable sddm
 # sudo systemctl enable --now zramd.service
