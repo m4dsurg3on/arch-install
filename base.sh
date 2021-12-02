@@ -10,7 +10,7 @@ echo "arch" >> /etc/hostname
 echo "127.0.0.1 localhost" >> /etc/hosts
 echo "::1 localhost" >> /etc/hosts
 echo "127.0.1.1 arch.localdomain arch" >> /etc/hosts
-echo root:Lemia.77 | chpasswd
+echo root:password | chpasswd
 
 # EXT4 file system
 # pacman -S grub efibootmgr os-prober networkmanager network-manager-applet dialog wpa_supplicant mtools dosfstools ntfs-3g reflector base-devel linux-headers xdg-utils xdg-user-dirs inetutils bluez bluez-utils pulseaudio-bluetooth bash-completion rsync
@@ -30,7 +30,6 @@ grub-install --target=x86_64-efi --efi-directory=/boot --removable
 # Grub installation on the VM
 # grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 
-echo "GRUB_DISABLE_OS_PROBER=false" >> /etc/default/grub
 grub-mkconfig -o /boot/grub/grub.cfg
 
 systemctl enable NetworkManager
@@ -40,7 +39,7 @@ systemctl enable fstrim.timer
 # systemctl enable vmtoolsd
 
 useradd -m sanjin
-echo sanjin:Lemia.77 | chpasswd
+echo sanjin:password | chpasswd
 echo "sanjin ALL=(ALL) ALL" >> /etc/sudoers.d/sanjin
 
 printf "\e[1;32mDone! Type exit, umount -a and reboot.\e[0m"
